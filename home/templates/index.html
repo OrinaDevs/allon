@@ -1,0 +1,111 @@
+
+{% extends "base.html" %}
+
+{% block title %}ALLON | Home {% endblock %}
+
+{% block content %}
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
+  <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="{% url 'index' %}">
+          <span class="h2 lead mb-0">Allon Inc.</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="{% url 'index' %}">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Projects</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Merch</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+              </li>
+          </ul>
+      </div>
+  </div>
+</nav>
+
+
+<!--Carousel-->
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="static/images/code.jpg" class="d-block w-100" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img src="static/images/automation.jfif" class="d-block w-100" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img src="static/images/happy.jfif" class="d-block w-100" alt="Third slide">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!--About-->
+<div class="container" id="about">
+  <p class="lead">At Allon Inc., we are dedicated to revolutionizing the digital landscape with innovative software solutions. Founded with a vision to empower businesses through cutting-edge technology, we specialize in developing custom software that drives efficiency, enhances user experiences, and fosters growth.</p>
+
+  <div class="row">
+    <section class="col-sm-3 p-3 bg-primary text-white">
+      <h2 class="h4 text-primary border-bottom pb-2">Our Mission</h2>
+      <p>Our mission is to deliver high-quality, reliable, and scalable software solutions that meet the unique needs of our clients. We believe in harnessing the power of technology to solve real-world problems and create opportunities for businesses to thrive in the digital era.</p>
+    </section>
+
+    <section class="col-sm-3 p-3 bg-dark text-white">
+      <h2 class="h4 text-primary border-bottom pb-2">What We Do</h2>
+      <ul class="list-group list-group-flush">
+          <li class="list-group-item"><strong>Custom Software Development:</strong> Tailored solutions that align with your business goals, from web applications to mobile apps and enterprise software.</li>
+          <li class="list-group-item"><strong>Cloud Services:</strong> Scalable and secure cloud solutions to streamline operations and enhance productivity.</li>
+          <li class="list-group-item"><strong>Data Analytics:</strong> Transforming data into actionable insights to drive informed decision-making.</li>
+          <li class="list-group-item"><strong>AI & Machine Learning:</strong> Leveraging artificial intelligence to automate processes and deliver intelligent solutions.</li>
+          <li class="list-group-item"><strong>Cybersecurity:</strong> Comprehensive security services to protect your data and ensure business continuity.</li>
+      </ul>
+    </section>
+
+    <section class="col-sm-3 p-3 bg-primary text-white">
+      <h2 class="h4 text-primary border-bottom pb-2">Our Values</h2>
+      <ul class="list-group list-group-flush">
+          <li class="list-group-item"><strong>Innovation:</strong> Continuously exploring new technologies and methodologies to stay ahead in a rapidly evolving industry.</li>
+          <li class="list-group-item"><strong>Quality:</strong> Commitment to excellence in every project, ensuring robust and reliable software.</li>
+          <li class="list-group-item"><strong>Integrity:</strong> Upholding the highest standards of honesty and transparency in our dealings.</li>
+          <li class="list-group-item"><strong>Customer-Centric:</strong> Focusing on our clients' needs and delivering solutions that exceed their expectations.</li>
+          <li class="list-group-item"><strong>Collaboration:</strong> Building strong partnerships with our clients to achieve shared success.</li>
+      </ul>
+    </section>
+
+    <section class="col-sm-3 p-3 bg-dark text-white">
+      <h2 class="h4 text-primary border-bottom pb-2">Why Choose Allon Inc.?</h2>
+      <p>With a team of skilled professionals passionate about technology, Allon Inc. is your trusted partner in navigating the complexities of the digital world. Our collaborative approach, combined with our technical expertise, ensures that we deliver solutions that not only meet but exceed your expectations. Whether you're a startup looking to make a mark or an established business aiming to innovate, Allon Inc. is here to help you achieve your goals.</p>
+      <p>Join us on a journey of innovation and excellence. Together, we can transform your vision into reality.</p>
+    </section>
+  </div>
+</div>
+
+<footer class="bg-light py-4 mt-4">
+  <div class="container text-center">
+      <p class="mb-0">© 2024 Allon Inc. All rights reserved.</p>
+  </div>
+</footer>
+{% endblock %}
