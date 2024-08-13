@@ -4,35 +4,6 @@
 {% block title %}ALLON | Home {% endblock %}
 
 {% block content %}
-<nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
-  <div class="container-fluid">
-      <a class="navbar-brand d-flex align-items-center" href="{% url 'index' %}">
-          <span class="h2 lead mb-0">Allon Inc.</span>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                  <a class="nav-link" href="{% url 'index' %}">Home</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#">Projects</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#">Merch</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#contact">Contact</a>
-              </li>
-          </ul>
-      </div>
-  </div>
-</nav>
 
 
 <!--Carousel-->
@@ -104,29 +75,34 @@
 </div>
 
 <!--Projects-->
-<p class="h2">Projects</p>
+<p class="h2" id="projects">Projects</p>
 <div class="container"> 
     <div class="row">
       <div class="col-sm-3">
+        <img src="static/images/allonss.jpg" alt="allon">
         <p class="h5">Porfolio Website</p>
         <a href="https://github.com/OrinaDevs/allon" target="_blank">view project</a>
       </div>
 
       <div class="col-sm-3">
+        <img src="static/images/allonss.jpg" alt="allon">
         <p class="h5">Cyber Cafe Website</p>
         <a href="https://github.com/OrinaDevs/Cyber" target="_blank">view project</a>
       </div>
 
       <div class="col-sm-3">
+        <img src="static/images/allonss.jpg" alt="allon">
         <p class="h5">Faccess Prototype</p>
         <a href="https://github.com/OrinaDevs/Faccess-Prototype" target="_blank">view project</a>
       </div>
 
       <div class="col-sm-3">
+        <img src="static/images/allonss.jpg" alt="allon">
         <p class="h5">Real Estate Website</p>
         <a href="https://github.com/OrinaDevs/realeastate">view project</a>
       </div>
     </div>
+    <a href="https://github.com/OrinaDevs" style="float: right;" target="_blank">View Github>></a>
 </div>
 
 <footer class="bg-light py-4 mt-4">
